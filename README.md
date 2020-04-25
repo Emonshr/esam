@@ -9,4 +9,4 @@ Caution: This script is not any beginner-friendly, super-easy-to-handle-script f
 * place a .bashrc file for your non-root account to the /mnt then, or else the installer will complain. Do arch-chroot. 
 
 ## What esam doesn't do
-esam doen't perform any genfstab command or install grub. Please do it yourself.
+esam doesn't perform any genfstab command, partitioning, or install grub. Please do these yourself.
