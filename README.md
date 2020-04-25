@@ -7,6 +7,7 @@ Caution: This script is not any beginner-friendly, super-easy-to-handle-script f
 * Modify the variables for your specific informations.
 * After the pacstrap and genfstab command, copy esam.sh to your /mnt. chmod it. 
 * place a .bashrc file for your non-root account to the /mnt then, or else the installer will complain. Do arch-chroot. 
+* Source the script and run esam.
 
 ## What esam doesn't do
 esam doesn't perform any genfstab command, partitioning, or install grub. Please do these yourself.
