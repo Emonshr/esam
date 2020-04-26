@@ -19,7 +19,7 @@ function esam () {
     #denv=(gnome )
     #denv=(xfce4)
     #denv=(mate)
-    # ^^ uncomment one, as your choosen desktop environment
+    # ^^ uncomment one, as your chosen desktop environment
     
     #wdriver=(  broadcom-wl-dkms ) # <-- uncomment, if you need broadcom driver
     bsrc=/.bashrc
