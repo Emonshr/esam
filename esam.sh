@@ -26,19 +26,19 @@ function esam () {
 	cat << EOF
 esam : Error occured !
 		 After fix mentioned error, run "esam" again. 
-		 It will automatically resume the automation.
+		 It will automatically resume the script.
 	   
-                 Usage: esam [OPTION] or: esam-repeat
-                 --from-JOBNAME run all functions, starting at JOBNAME
+             Usage: esam [OPTION] or: esam-repeat
+             --from-JOBNAME run all functions, starting at JOBNAME
 	         --only-JOBNAME run JOBNAME only, skipping others
                  Without OPTION parameter all functions run from the first.
                  Or, as indicated by the STATE variable.
 
-	         To manually resume automation from a specific part, follow this-
+	         To manually resume the script from a specific part, follow this-
 		      from a run "esam --from-a"
 	   	      from b run "esam --from-b"
 	  
-	         if you want to run automation from beginning again-
+	         if you want to run the script from beginning again-
 	  	      run "esam-repeat"
 	 
 	         To run a specific part and skip others, follow this-
@@ -143,12 +143,12 @@ EOF
     
     # run functions in range $fn_list[$start:$stop[
     function esam_runner () {
-		# That means if $1 and $2 exists then the default values will be retrieved from 1st commmand line Argument and 2nd command line argument respectively.
+		# If $1 and $2 exists then the default values will be retrieved and assigned.
 		local start=${1:-$STATE}
 		local stop=${2:-$fn_len}
 	
 		while [ $start -lt $stop ]; do
-		    echo "Numer Of Job Done  $start"
+		    echo "Number Of Job Done  $start"
 		    echo "Job To Done Altogether $stop"
 
 		    # Report each time, whether the running function is successful or not.				
