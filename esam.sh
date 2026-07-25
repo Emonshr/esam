@@ -26,7 +26,7 @@ function esam () {
 	cat << EOF
 esam : Error occured !
 		 After fix mentioned error, run "esam" again. 
-		 It will automatically resume the script.
+		 It will resume the script.
 	   
              Usage: esam [OPTION] or: esam-repeat
              --from-JOBNAME run all functions, starting at JOBNAME
